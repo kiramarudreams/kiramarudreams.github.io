@@ -18,11 +18,15 @@
       border: 5px solid #000000;
     }
 
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
+    .row { 
+      display: -webkit-box;
+      display: -ms-flexbox; 
+      display: flex; 
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px; 
+    } 
     
   </style>
 
@@ -67,22 +71,27 @@
       <figcaption> Grimm de <a href="https://store.steampowered.com/app/367520/Hollow_Knight/" target="_blank">Hollow
           Knight</a> </figcaption>
 
+
     </figure>
 
-    <figure class="column">
+    <div class="row"> 
+
+    <figure>
        <a href="https://kiramarudreams.github.io/page2"> <img src="https://f.feridinha.com/dvV7x.png"
           height="150px"> </a>
       <figcaption> gatinhos </figcaption>
 
     </figure>
 
-    <figure class="column"> 
+    <figure> 
 
      <a href="https://kiramarudreams.github.io/page3"> <img src="https://f.feridinha.com/u8t2M.png"
         height="150px"> </a>
         <figcaption> cachorrinhos </figcaption>
 
     </figure>    
+
+    </div>
 
   </center>
 
