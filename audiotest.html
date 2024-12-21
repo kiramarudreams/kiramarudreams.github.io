@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Images with Audio</title>
+    <style>
+
+.row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: auto;
+      margin-left: auto;
+    }
+      
+    </style>
+</head>
+<body>
+
+  <div class="row">
+  
+    <div class="container"  onclick="playAudio(this)">
+        <h1> foda </h1>
+        <audio class="audio">
+            <source src="https://f.feridinha.com/mTX4V.mp3">
+        </audio>
+    </div>
+
+    <div class="container"  onclick="playAudio(this)">
+        <h1> bem foda </h1>
+        <audio class="audio">
+            <source src="https://f.feridinha.com/RSGkc.mp3">
+        </audio>
+    </div>
+
+    <div class="container"  onclick="playAudio(this)">
+        <h1> abiduga </h1>
+        <audio class="audio">
+            <source src="https://f.feridinha.com/rGOQP.mp3">
+        </audio>
+    </div>
+
+  </div>
+
+    <script>
+        function playAudio(container) {
+            var audio = container.querySelector('audio');
+            audio.play()
+        }
+    </script>
+</body>
+</html>

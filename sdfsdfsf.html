@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Cursor Example</title>
+    <style>
+        /* Define styles for clickable elements */
+        .custom-cursor-element {
+            /* Add styles as needed */
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#" class="custom-cursor-element">Clickable Link</a>
+
+<button class="custom-cursor-element">Clickable Button</button>
+
+<div class="custom-cursor-element" style="width: 100px; height: 100px; background-color: lightgray;">Clickable Div</div>
+
+<script>
+    
+    // JavaScript code to change cursor on hover
+document.addEventListener('DOMContentLoaded', function() {
+    var customCursorImage = 'https://f.feridinha.com/SvOh8.png'; // Path to your custom cursor image for pointer state
+
+    var elements = document.querySelectorAll('.custom-cursor-element');
+
+    elements.forEach(function(element) {
+        element.addEventListener('mouseover', function() {
+            document.body.style.cursor = 'url(' + customCursorImage + '), auto';
+        });
+
+        element.addEventListener('mouseout', function() {
+            document.body.style.cursor = 'auto'; // Reset to default cursor when mouse leaves element
+        });
+    });
+});
+
+
+</script>
+
+</body>
+</html>
